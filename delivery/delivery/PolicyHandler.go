@@ -15,9 +15,9 @@ func wheneverOrderPlaced_StartDelivery(data map[string]interface{}){
 	
 }
 
-func wheneverOrderCancelled_CancelDelivery(data map[string]interface{}){
+func wheneverTest123123_CancelDelivery(data map[string]interface{}){
 	
-	event := NewOrderCancelled()
+	event := NewTest123123()
 	mapstructure.Decode(data,&event)
 	delivery := &Delivery{}
 	// TODO Set value from event ( ex: delivery.OrderId = event.Id )

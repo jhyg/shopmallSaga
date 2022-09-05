@@ -61,8 +61,8 @@ func KafkaConsumer(){
             if dat["eventType"] == "OrderPlaced"{
                 wheneverOrderPlaced_StartDelivery(dat)
             }
-            if dat["eventType"] == "OrderCancelled"{
-                wheneverOrderCancelled_CancelDelivery(dat)
+            if dat["eventType"] == "Test123123"{
+                wheneverTest123123_CancelDelivery(dat)
             }
 			
         } else {

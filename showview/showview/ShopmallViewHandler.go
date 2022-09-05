@@ -47,7 +47,7 @@ func whenDeliveryStarted_then_UPDATE_1 (inputEvent map[string]interface{}) {
 	}
 }
 
-func whenOrderCancelled_then_DELETE_1 (inputEvent map[string]interface{}) {
+func whenOrderCancelled_then_DELETE_ (inputEvent map[string]interface{}) {
 	orderCancelled := NewOrderCancelled()
 	mapstructure.Decode(inputEvent,&orderCancelled)
 

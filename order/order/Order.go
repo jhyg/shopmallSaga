@@ -19,17 +19,17 @@ func (self *Order) AfterCreate(tx *gorm.DB) (err error){
 	Publish(orderPlaced)
 	
 	
+	test123123 := NewTest123123()
+	model.Copy(test123123, self)
+
+	Publish(test123123)
+	
+	
 	return nil
 }
 func (self *Order) BeforeCreate(tx *gorm.DB) (err error){
 	return nil
 }
 func (self *Order) BeforeDelete(tx *gorm.DB) (err error){
-	orderCancelled := NewOrderCancelled()
-	model.Copy(orderCancelled, self)
-
-	Publish(orderCancelled)
-	
-	
 	return nil
 }

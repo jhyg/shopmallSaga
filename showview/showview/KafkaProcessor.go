@@ -66,7 +66,7 @@ func KafkaConsumer(){
 			}
 
 			if dat["eventType"] == "OrderCancelled"{
-				whenOrderCancelled_then_DELETE_1(dat)
+				whenOrderCancelled_then_DELETE_(dat)
 			}
 			
         } else {
